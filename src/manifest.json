@@ -11,6 +11,7 @@
   },
   "permissions": [
     "identity",
+    "storage",
     "https://getpocket.com/v3/*"
   ],
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApBYwb004DoA8f20R8X+DldpnZ0o5nFhEMOENsVBi+VEXUzJY7mLum5VTNC8Te24nqLS4XP5+rRrDk4JivSRuX/GNLYTPMOi2xAd6HCTuxXrUZhuXLGtf6X/f2GGeejNOPqBQ2wDxZTf+Bwu7n4oejr0UbAoJ9UlQ+OGNovTCasYRqK3it/+jwXBWG4Fju+O9JgSJ183pKbhEb+Q28m6JULTlVDFMrc1NLJIchuRwXVQN1imol80+mVrVo5Grkfss0lDgxpdIJVZ7DWxuMLoh1mVephKOUKIf3ZGHqt+8Hq1X4djzvc/5R4mVn6T5Rb6aluDJKp2BkWx2N4KxR/jIrwIDAQAB"
