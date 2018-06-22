@@ -9,6 +9,9 @@
   "chrome_url_overrides" : {
     "newtab": "index.html"
   },
+  "sandbox": {
+    "pages": ["sandbox.html"]
+  },
   "permissions": [
     "identity",
     "storage",

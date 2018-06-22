@@ -4,7 +4,7 @@
   "description": "Reading list | A Chrome extension powered by your personal Pocket",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --extensions \".ts,.tsx\" && babel src --out-dir dist --copy-files && rm ./dist/*.ts && rm ./dist/*.config.js",
+    "build": "babel src --out-dir dist --extensions \".ts,.tsx\" && babel src --out-dir dist --copy-files && rm ./dist/*.ts && rm ./dist/*.config.js && rm ./dist/*.d.js",
     "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

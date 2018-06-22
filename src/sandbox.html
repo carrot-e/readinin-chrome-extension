@@ -1,0 +1,22 @@
+<script src="./tmpl.min.js"></script>
+
+<script type="text/x-tmpl" id="tmpl-demo">
+    <ul>
+        {% for (let i of Object.values(o.list)) { %}
+            <li>{%= i.given_title %}</li>
+        {% } %}
+    </ul>
+</script>
+
+<script>
+    window.addEventListener('message', function(event) {
+        switch (event.data.command) {
+            case 'render':
+                event.source.postMessage({
+                    name: event.data.command,
+                    html: tmpl('tmpl-demo', event.data.content)
+                }, event.origin);
+                break;
+        }
+    });
+</script>

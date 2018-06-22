@@ -22,7 +22,8 @@
 
     "types": [
       //(various types, e.g. jquery, core-js),
-      "chrome"
+      "chrome",
+      "tmpl"
     ],
     /* Strict Type-Checking Options */
     "strict": true,                           /* Enable all strict type-checking options. */
