@@ -4,10 +4,13 @@ export default function (user: any) {
     return fetch(`${$C.apiUrl}/v3/get`, {
         body: JSON.stringify({
             consumer_key: $C.consumerKey,
-            access_token: user.access_token
+            access_token: user.access_token,
+            tag: '#toread',
+            state: 'unread',
+            sort: 'newest'
         }),
         headers: $C.headers,
         method: 'POST'
     })
-        .then(response => response.json())
+        .then(response => response.json());
 }

@@ -3,7 +3,16 @@
 <script type="text/x-tmpl" id="tmpl-demo">
     <ul>
         {% for (let i of Object.values(o.list)) { %}
-            <li>{%= i.given_title %}</li>
+            <div>
+                <a href="{%= i.resolved_url %}">
+                    {% if (i.has_image === '1') { %}
+                        <img src="{%= i.top_image_url %}" height="200" />
+                    {% } %}
+                    <h2>{%= i.resolved_title %}</h2>
+                    <p>{%= i.excerpt %}</p>
+                    <p class="time-to-read">{%= i.time_to_read %} min</p>
+                </a>
+            </div>
         {% } %}
     </ul>
 </script>
